@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  width: 90%;
+  margin: auto;
+
+  .main{
+    width: 100%;
+    
+    height: 100vh;
+    display: flex;
+
+    .leftBar{
+      width: 30%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .body{
+      width: 40%;
+      
+      height: 100vh;
+      position: relative;
+    }
+
+    .rightBar{
+      width: 30%;
+      border: 1px solid blue;
+      height: 100vh;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+
+  .App{
+    .main{
+      .leftBar,
+      .rightBar{
+        display: none;
+      }
+
+      .body{
+        width: 100%;
+      }
+    }
+  }
+  
+}
+
+@media screen and (min-width: 480px) {
+  
+}
+
