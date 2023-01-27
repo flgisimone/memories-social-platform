@@ -1,0 +1,70 @@
+.TrendPost{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .infoPrimaryTrend{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .userImageTrend{
+            width: 3.5rem;
+            border-radius: 50%;
+        }
+
+        .namingUserTrend{
+            
+            .titleTrend{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .contentPostTrend{
+        display: flex;
+        gap: 1rem;
+        color: #FE6F27;
+        font-weight: 600;
+
+        img{
+            width: 50%;
+        }
+
+        .interactionTrend{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .interactionContainerTrend{
+                font-size: 1.5rem;
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+
+                .reactionsTrend{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .btnInteractionTrend{
+                display: flex;
+                flex-direction: row;        
+                gap: 1rem;
+                
+                button{
+                    background-color: transparent;
+                    border: none;
+                    font-size: 1.3rem;
+                    background-color: #2f2f2f;
+                    padding: .5rem;
+                    border-radius: .2rem;
+
+                    i{
+                        color: #FE6F27;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.TrendPostList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    gap: 2rem;
+    background-color: #fcfcfc;
+    padding: 1rem;
+    border-radius: .2rem;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 37%);
+}
+
+.TrendPostList::-webkit-scrollbar{
+    background-color: transparent;
+    width: .5rem;
+}
+
+.TrendPostList::-webkit-scrollbar-thumb{
+    background-color: #FE6F27;
+    border-radius: .2rem;
+}
