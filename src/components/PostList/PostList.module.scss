@@ -1,0 +1,20 @@
+.PostList{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    height: 76.5vh;
+}
+
+.PostList::-webkit-scrollbar{
+    background-color: transparent;
+    width: .5rem;
+}
+
+.PostList::-webkit-scrollbar-thumb{
+    background-color: #FE6F27;
+    border-radius: .2rem;
+}

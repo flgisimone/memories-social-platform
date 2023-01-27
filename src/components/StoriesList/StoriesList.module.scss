@@ -6,7 +6,20 @@
     display: flex;
     overflow-x: hidden;
     overflow-x: scroll;
-    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
     padding: .5rem;
     gap: 1rem;
+}
+
+.StoriesList::-webkit-scrollbar{
+    background-color: transparent;
+    height: .5rem;
+}
+
+.StoriesList::-webkit-scrollbar-thumb{
+    background-color: #FE6F27;
+    border-radius: 1rem;
 }
