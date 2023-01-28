@@ -1,0 +1,21 @@
+.SuggestFriend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .imgSuggestFriend{
+        width: 3.25rem;
+        border-radius: 50%;
+    }
+
+    .infoUser{
+        .completeName{
+            font-size: .8rem;
+            font-weight: 600;
+        }
+
+        h5{
+            color: #FE6F27;
+        }
+    }
+}

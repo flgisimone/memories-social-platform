@@ -2,7 +2,7 @@ const BASE_URL = "https://dummyjson.com";
 const URL_RANDOMUSER = "https://randomuser.me"
 const URL_PERSONS = "https://fakerapi.it/api/v1"
 
-const GET = async (resources) => {
+const GET_DUMMYJSON = async (resources) => {
     const res = await fetch(`${BASE_URL}/${resources}`)
     const data = await res.json()
 
@@ -34,4 +34,4 @@ const POST = async (resources, body) => {
     return data;
 }
 
-export {GET, GET_RANDOMUSER, POST}
+export {GET_DUMMYJSON, GET_RANDOMUSER, GET_PERSONS, POST}

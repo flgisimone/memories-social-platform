@@ -1,0 +1,19 @@
+.containerFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .author{
+        display: flex;
+        flex-direction: column;
+        color:black;
+        text-align: center;
+        gap: 0.25rem;
+        font-size: 0.8rem;
+
+        .codeDev{
+            color: #61DBFB;
+            font-weight: 600;
+        }
+    }
+}

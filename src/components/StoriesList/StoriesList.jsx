@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Stories from '../Stories/Stories'
-import { GET } from '../../utils/fetch'
+import { GET_DUMMYJSON } from '../../utils/fetch'
 import styles from "./StoriesList.module.scss"
 
 const StoriesList = () => {
@@ -8,7 +8,7 @@ const StoriesList = () => {
     const [storiesList, setStoriesList] = useState([])
 
     useEffect(() => {
-        GET("users").then(({users}) => setStoriesList(users))
+      GET_DUMMYJSON("users").then(({users}) => setStoriesList(users))
     }, [])
 
   return (

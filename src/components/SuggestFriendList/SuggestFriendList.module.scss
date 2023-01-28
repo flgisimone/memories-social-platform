@@ -1,0 +1,24 @@
+.SuggestFriendList{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 37%);
+    gap: 1rem;
+
+    .textSuggestFriendList{
+        font-size: 1rem;
+    }
+
+    .containerSuggestFriendList{
+        overflow-y: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .containerSuggestFriendList::-webkit-scrollbar{
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+.Friend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img{
+        border-radius: 50%;
+        width: 3rem;
+    }
+
+    .infoFriend{
+        display: flex;
+        flex-direction: column;
+
+        .completeName{
+            color: #FE6F27;
+        }
+
+        .username{
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+}

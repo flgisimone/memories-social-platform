@@ -10,10 +10,10 @@ const NewPost = () => {
             <input type="file" accept=".jpg, .jpeg, .png, .mp4, .avi, .webm"/>
             <div className={styles.containerField}>
                 <div className={styles.containerFieldInput}>
-                    <textarea type="text" placeholder='Condividi un pensiero' className={styles.textPost} required></textarea>
-                    <input type="text" placeholder='#Hashtag' required/>
+                    <textarea type="text" placeholder='Scrivi un pensiero' className={styles.textPost} required></textarea>
+                    <input type="text" placeholder='#Hashtag' className={styles.hashtag} required/>
                 </div>
-                <input type="submit" value="Condividi" className={styles.submitNewPost}/>
+                <input type="submit" value="Condividi il tuo ricordo" className={styles.submitNewPost}/>
             </div>
         </form>
     </div>
