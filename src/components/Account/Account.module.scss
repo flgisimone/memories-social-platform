@@ -1,11 +1,11 @@
 .Account{
     display: flex;
     gap: .5rem;
+    align-items: center;
 
     .imgProfile{
         width: 3.5rem;
         height: 3.5rem;
-
         border-radius: 50%;
     }
 
@@ -14,6 +14,7 @@
         flex-direction: column;
         width: fit-content;
         gap: .35rem;
+        align-items: flex-start;
 
         .username{
             color: #FE6F27;
@@ -24,6 +25,17 @@
             background-color: transparent;
             border: none;
             font-size: .9rem;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    
+    .Account{
+
+        .imgProfile{
+            width: 4rem;
+            height: 4rem;
         }
     }
 }

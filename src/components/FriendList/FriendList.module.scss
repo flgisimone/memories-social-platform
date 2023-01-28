@@ -1,7 +1,5 @@
 .FriendList{
     height: 13.9rem;
-    overflow-y: hidden;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -25,18 +23,20 @@
     }
 
     .containerFiendlist{
+        overflow-y: hidden;
+        overflow-y: scroll;
         display: flex;
         flex-direction: column;
         gap: .5rem;
     }
 }
 
-.FriendList::-webkit-scrollbar{
+.containerFiendlist::-webkit-scrollbar{
     background-color: transparent;
     width: .5rem;
 }
 
-.FriendList::-webkit-scrollbar-thumb{
+.containerFiendlist::-webkit-scrollbar-thumb{
     background-color: #FE6F27;
     border-radius: .2rem;
 }
