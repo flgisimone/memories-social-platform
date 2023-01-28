@@ -18,3 +18,15 @@
     background-color: #FE6F27;
     border-radius: .2rem;
 }
+
+@media screen and (max-width: 480px) {
+
+    .PostList{
+        width: 100%;
+    }
+
+    .PostList::-webkit-scrollbar{
+        display: none;
+    }
+    
+}
