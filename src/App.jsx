@@ -34,9 +34,9 @@ function App() {
       <section className={styles.containerStoriesList}>
         <StoriesList />
       </section>
-      <section className={styles.containerMQSuggestFriendList}>
+      {/*<section className={styles.containerMQSuggestFriendList}>
         <MQSuggestFriendList />
-      </section>
+  </section>*/}
       
 
       <section className={styles.main}>
