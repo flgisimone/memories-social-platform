@@ -33,15 +33,11 @@
                     font-size: 1rem;
                     padding-left: .5rem;
                     border: none;
-                    background-color: #2f2f2f;
-                    color: #fcfcfc;
+                    background-color: #eeeeee;
+                    color: black;
                     outline: none;
                     align-self: center;
                     border-radius: 0.2rem;
-                }
-        
-                input::placeholder{
-                    color: #fcfcfcb9;
                 }
 
                 .textPost{
@@ -51,12 +47,13 @@
                     font-size: 1rem;
                     padding-left: .5rem;
                     border: none;
-                    background-color: #2f2f2f;
-                    color: #fcfcfc;
+                    background-color: #eeeeee;
+                    color: black;
                     outline: none;
                     align-self: center;
                     border-radius: 0.2rem;
                 }
+
             }
         }
 
@@ -67,8 +64,9 @@
             border: none;
             color: #fcfcfc;
             border-radius: 0.2rem;
-            padding: 0.7rem 0.9rem;
+            padding: 0.7rem;
             font-size: 1rem;
+            cursor: pointer;
         }
     }
 }

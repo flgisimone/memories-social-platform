@@ -1,5 +1,5 @@
 .Post{
-    background-color: #2f2f2f;
+    background-color: #eeeeee;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -20,10 +20,15 @@
         .namingUser{
             display: flex;
             flex-direction: column;
-            color: white;
+            color: black;
 
             .username{
                 color: #FE6F27;
+                font-weight: 600;
+            }
+
+            .title{
+                font-weight: 500;
             }
         }
     }
@@ -42,8 +47,8 @@
         .hashtagContainer{
             display: flex;
             gap: .5rem;
-            font-size: 1rem;
-            color: white;
+            font-size: .9rem;
+            color: black;
         }
     }
 
@@ -57,6 +62,7 @@
             display: flex;
             align-items: center;
             gap: .5rem;
+            font-weight: 600;
             color: #FE6F27;
     
             i{
@@ -76,7 +82,7 @@
                 background-color: transparent;
                 border: none;
                 font-size: 1.35rem;
-                color: white;
+                color: black;
             }
         }
     }

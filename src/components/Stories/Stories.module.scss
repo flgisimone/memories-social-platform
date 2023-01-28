@@ -7,11 +7,12 @@
     .imgUserStories{
         width: 4.5rem;
         border-radius: 50%;
-        border: 2px solid orange;
+        border: 3px solid transparent;
         margin: .1rem 0;
+        background: linear-gradient(135deg,#FE6F27,white) border-box; 
     }
 
     .nameUser{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 }

@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 import React from 'react'
-import {GET} from "../../utils/fetch"
+import {GET_DUMMYJSON} from "../../utils/fetch"
 import Post from '../Post/Post'
 import styles from "./PostList.module.scss"
 
@@ -9,7 +9,7 @@ const PostList = () => {
     const [postList, setPostList] = useState([])
 
     useEffect(() => {
-        GET("posts").then(({posts}) => setPostList(posts))
+      GET_DUMMYJSON("posts").then(({posts}) => setPostList(posts))
     }, [])
 
   return (

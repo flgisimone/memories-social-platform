@@ -1,0 +1,29 @@
+.Account{
+    display: flex;
+    gap: .5rem;
+
+    .imgProfile{
+        width: 3.5rem;
+        height: 3.5rem;
+
+        border-radius: 50%;
+    }
+
+    .accountContainer{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: .35rem;
+
+        .username{
+            color: #FE6F27;
+            font-weight: 600;
+        }
+
+        .logout{
+            background-color: transparent;
+            border: none;
+            font-size: .9rem;
+        }
+    }
+}

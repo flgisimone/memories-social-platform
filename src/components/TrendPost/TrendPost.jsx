@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { get } from 'lodash'
-import {GET, GET_RANDOMUSER} from "../../utils/fetch"
+import {GET_DUMMYJSON, GET_RANDOMUSER} from "../../utils/fetch"
 import styles from "./TrendPost.module.scss"
 
 const TrendPost = ({data}) => {
@@ -12,7 +12,7 @@ const TrendPost = ({data}) => {
     const [img, setImg] = useState({})
 
     useEffect(() => {
-        GET(`users/${data.userId}`).then(user => setUser(user))
+        GET_DUMMYJSON(`users/${data.userId}`).then(user => setUser(user))
     }, [])
 
     useEffect(() => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import {GET, GET_RANDOMUSER} from "../../utils/fetch"
+import {GET_DUMMYJSON, GET_RANDOMUSER} from "../../utils/fetch"
 import { get } from 'lodash'
 import styles from "./Post.module.scss"
 
@@ -12,7 +12,7 @@ const Post = ({data}) => {
     const [img, setImg] = useState({})
 
     useEffect(() => {
-        GET(`users/${data.userId}`).then(user => setUser(user))
+        GET_DUMMYJSON(`users/${data.userId}`).then(user => setUser(user))
     }, [])
 
     useEffect(() => {
@@ -38,7 +38,7 @@ const Post = ({data}) => {
         </div>
         <div className={styles.interaction}>
             <div className={styles.interactionContainer}>
-                <i className="fa-regular fa-heart"></i>
+                <i className="fa-solid fa-heart"></i>
                     <span className={styles.reactions}>{data.reactions}</span>
                 </div>
             <div className={styles.btnInteraction}>
