@@ -10,8 +10,9 @@ import FriendList from './components/FriendList/FriendList';
 import Login from './components/Login/Login';
 import Account from './components/Account/Account';
 import MQNavBar from './components/MQNavBar/MQNavBar';
-import ModalNewPost from './components/ModalNewPost/ModalNewPost';
 import ModalTrendPost from './components/ModalTrendPost/ModalTrendPost';
+import ModalNewPost from './components/ModalNewPost/ModalNewPost';
+import ModalFriendList from './components/ModalFriendList/ModalFriendList';
 import Footer from './components/Footer/Footer';
 import styles from './App.module.scss';
 
@@ -22,6 +23,7 @@ function App() {
   const [user, setUser] = useState();
   const [openModalNewPost, setOpenModalNewPost] = useState(false)
   const [openModalTrendPost, setOpenModalTrendPost] = useState(false)
+  const [openModalFriendList, setOpenModalFriendList] = useState(false)
 
   useEffect(() => {
     if (localStorage.getItem("username")) {
@@ -63,14 +65,18 @@ function App() {
 
       <section className={styles.containerMQNavBar}>
         <MQNavBar
+        openModalTrendPost={openModalTrendPost} 
+        setOpenModalTrendPost={setOpenModalTrendPost} 
         openModalNewPost={openModalNewPost} 
         setOpenModalNewPost={setOpenModalNewPost}
-        openModalTrendPost={openModalTrendPost} 
-        setOpenModalTrendPost={setOpenModalTrendPost} />
+        openModalFriendList={openModalFriendList} 
+        setOpenModalFriendList={setOpenModalFriendList}
+        />
       </section>
       
       {openModalNewPost && <ModalNewPost openModalNewPost={openModalNewPost} setOpenModalNewPost={setOpenModalNewPost}/>}
       {openModalTrendPost && <ModalTrendPost openModalTrendPost={openModalTrendPost} setOpenModalTrendPost={setOpenModalTrendPost}/>}
+      {openModalFriendList && <ModalFriendList openModalFriendList={openModalFriendList} setOpenModalFriendList={setOpenModalFriendList}/>}
       
     </div>) : (<>
       <Login />
