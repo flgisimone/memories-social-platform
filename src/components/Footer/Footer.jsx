@@ -5,8 +5,6 @@ const Footer = () => {
 
     const getYear = new Date()
     const dateYear = getYear.getFullYear()
-    console.log(dateYear)
-
   return (
     <div className="containerFooter" id="contatti">
         <div className="author">

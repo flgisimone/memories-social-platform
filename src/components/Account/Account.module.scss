@@ -29,13 +29,23 @@
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479.9px) {
     
     .Account{
 
         .imgProfile{
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .accountContainer{
+            .username{
+                font-size: .8rem;
+            }
+
+            .logout{
+                font-size: .8rem;
+            }
         }
     }
 }

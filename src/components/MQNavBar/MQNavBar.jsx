@@ -1,12 +1,12 @@
-import React from 'react'
+import NewPostBtn from "../../atoms/NewPostBtn/NewPostBtn"
+import TrendPostBtn from "../../atoms/TrendPostBtn/TrendPostBtn"
 import styles from "./MQNavBar.module.scss"
 
-const MQNavBar = () => {
+const MQNavBar = ({openModalNewPost, setOpenModalNewPost, openModalTrendPost, setOpenModalTrendPost}) => {
   return (
     <div className={styles.MQNavBar}>
-        <button><i class="fa-solid fa-plus"></i></button>
-        <button><i class="fa-solid fa-arrow-trend-up"></i></button>
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <NewPostBtn openModalNewPost={openModalNewPost} setOpenModalNewPost={setOpenModalNewPost}/>
+        <TrendPostBtn openModalTrendPost={openModalTrendPost} setOpenModalTrendPost={setOpenModalTrendPost}/>
     </div>
   )
 }

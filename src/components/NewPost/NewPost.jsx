@@ -1,7 +1,6 @@
-import React from 'react'
 import styles from "./NewPost.module.scss"
 
-const NewPost = () => {
+const NewPost = ({openModal, setOpenModal}) => {
     
   return (
     <div className={styles.NewPost}>
@@ -13,7 +12,7 @@ const NewPost = () => {
                     <textarea type="text" placeholder='Scrivi un pensiero' className={styles.textPost} required></textarea>
                     <input type="text" placeholder='#Hashtag' className={styles.hashtag} required/>
                 </div>
-                <input type="submit" value="Condividi il tuo ricordo" className={styles.submitNewPost}/>
+                <input type="submit" value="Condividi il tuo ricordo" className={styles.submitNewPost} />
             </div>
         </form>
     </div>
