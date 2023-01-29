@@ -1,8 +1,9 @@
 .Header{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     background-color: white;
 
-    .containerHeader{
+    .HeaderContainer{
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -22,5 +23,34 @@
             font-weight: 600;
         }
        }
+    }
+}
+
+@media screen and (max-width: 479.9px) {
+    .Header{
+        width: 100%;
+        background-color: white;
+    
+        .HeaderContainer{
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        
+           .nameSocial{
+            
+            h1{
+                font-size: 1.1rem;
+                font-family: "Yeseva One", cursive;
+            }
+    
+            span{
+                font-size: .7rem;
+                font-family: "Yeseva One", cursive;
+                font-weight: 600;
+            }
+           }
+        }
     }
 }
