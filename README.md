@@ -1,1 +1,1 @@
-# memories-social-app
+Memories - Share Your Moment | Social Platform
