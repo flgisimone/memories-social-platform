@@ -1,7 +1,13 @@
 .SuggestFriend{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+
+    .SuggestFriendContainer{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 
     .imgSuggestFriend{
         width: 3.25rem;
@@ -17,5 +23,9 @@
         h5{
             color: #FE6F27;
         }
+    }
+
+    .addFriend{
+        cursor: pointer;
     }
 }

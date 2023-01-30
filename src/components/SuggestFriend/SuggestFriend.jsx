@@ -15,12 +15,14 @@ const SuggestFriend = () => {
 
   return (
     <div className={styles.SuggestFriend}>
+      <div className={styles.SuggestFriendContainer}>
         <img src={get(user, 'results[0].picture.large')} alt="" className={styles.imgSuggestFriend}/>
-        <div className={styles.infoUser}>
-          <h5>@{get(user, "results[0].login.username")}</h5>
-          <span className={styles.completeName}>{get(user, "results[0].name.first")} {get(user, "results[0].name.last")}</span>
-        </div>
-        
+          <div className={styles.infoUser}>
+            <h5>@{get(user, "results[0].login.username")}</h5>
+            <span className={styles.completeName}>{get(user, "results[0].name.first")} {get(user, "results[0].name.last")}</span>
+          </div>
+      </div>
+        <div className={styles.addFriend}><i class="fa-solid fa-user-plus"></i></div>
     </div>
   )
 }
