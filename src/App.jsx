@@ -13,6 +13,7 @@ import MQNavBar from './components/MQNavBar/MQNavBar';
 import ModalTrendPost from './components/ModalTrendPost/ModalTrendPost';
 import ModalNewPost from './components/ModalNewPost/ModalNewPost';
 import ModalFriendList from './components/ModalFriendList/ModalFriendList';
+import ModalSuggestFriend from './components/ModalSuggestFriend/ModalSuggestFriend';
 import Footer from './components/Footer/Footer';
 import styles from './App.module.scss';
 
@@ -24,6 +25,7 @@ function App() {
   const [openModalNewPost, setOpenModalNewPost] = useState(false)
   const [openModalTrendPost, setOpenModalTrendPost] = useState(false)
   const [openModalFriendList, setOpenModalFriendList] = useState(false)
+  const [openModalSuggestFriend, setOpenModalSuggestFriend] = useState(false)
 
   useEffect(() => {
     if (localStorage.getItem("username")) {
@@ -40,9 +42,6 @@ function App() {
       <section className={styles.containerStoriesList}>
         <StoriesList />
       </section>
-      {/*<section className={styles.containerMQSuggestFriendList}>
-        <MQSuggestFriendList />
-  </section>*/}
       
       <section className={styles.main}>
         <div className={styles.leftBar}>
@@ -71,12 +70,15 @@ function App() {
         setOpenModalNewPost={setOpenModalNewPost}
         openModalFriendList={openModalFriendList} 
         setOpenModalFriendList={setOpenModalFriendList}
+        openModalSuggestFriend={openModalSuggestFriend} 
+        setOpenModalSuggestFriend={setOpenModalSuggestFriend}
         />
       </section>
       
       {openModalNewPost && <ModalNewPost openModalNewPost={openModalNewPost} setOpenModalNewPost={setOpenModalNewPost}/>}
       {openModalTrendPost && <ModalTrendPost openModalTrendPost={openModalTrendPost} setOpenModalTrendPost={setOpenModalTrendPost}/>}
       {openModalFriendList && <ModalFriendList openModalFriendList={openModalFriendList} setOpenModalFriendList={setOpenModalFriendList}/>}
+      {openModalSuggestFriend && <ModalSuggestFriend openModalSuggestFriend={openModalSuggestFriend} setOpenModalSuggestFriend={setOpenModalSuggestFriend}/>}
       
     </div>) : (<>
       <Login />
