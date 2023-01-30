@@ -1,1 +1,1 @@
-Memories - Take Your Moment
+Memories - Share Your Moment | Social Platform
